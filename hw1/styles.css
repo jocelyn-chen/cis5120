@@ -1,0 +1,402 @@
+p {
+    font-family: Inter;
+    font-size: 12;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+#weather-app {
+    position: absolute;
+    background-image: linear-gradient(#4EC7FF, #BBEAFF 40%, #A4E2FF 100%);
+    height: 870px;
+    width: 400px;
+    border-radius: 50px;
+    left: 0px;
+    top: 0px;
+
+    overflow: hidden;
+}
+
+#button-bar {
+    display: flex;
+    flex-direction: row;
+
+    height: 30px;
+    width: auto;
+}
+
+#home-button {
+    height: 30px;
+    width: 30px;
+
+    margin: 0px;
+
+    position: absolute;
+    left: 15px;
+}
+
+#share-button {
+    height: 30px;
+    width: 30px;
+
+    margin: 0px;
+    border-radius: 15px;
+    border-width: 0px;
+    padding: 0;
+    
+    position: absolute;
+    right: 50px;
+    
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+#share-icon {
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+}
+
+#settings-button {
+    height: 30px;
+    width: 30px;
+
+    margin: 0px;
+    border-radius: 15px;
+
+    position: absolute;
+    right: 15px;
+    
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+#settings-icon {
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+}
+
+#scrollable-area {
+    position: absolute;
+    height: 725px;
+    width: 400px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    top: 85px;
+
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+
+}
+
+#dynamic-island {
+    background-color: black; 
+    border-radius: 15px; 
+    width: 125px; 
+    height: 30px;
+    position: fixed;
+    left: 138px;
+    top: 15px;
+}
+
+#status-bar {
+    position: sticky;
+    left: 130px;
+    top: 0px;
+    width: 272px;
+    height: 50px;
+}
+
+#time {
+    font-size: 16;
+
+    position: fixed;
+    left: 50px;
+    top: 0px;
+}
+
+#location {
+    font-size: 32;
+
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    text-shadow: 0px 0px 4px gray;
+}
+
+#day-overview {
+    display: flex;
+    flex-direction: row;
+
+    gap: 30px;
+
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.day-section {
+    display: flex;
+    flex-direction: column;
+
+    flex-grow: 1;
+
+    margin-top: 15px;
+}
+
+
+.day-time {
+    font-size: 16;
+
+    text-shadow: 0px 0px 4px gray;
+    margin: 0px;
+
+    text-align: center;
+}
+
+.day-temp {
+    font-size: 48;
+    font-weight: 150;
+    
+    text-shadow: 0px 0px 4px gray;
+    margin: 0px;
+
+    text-align: center;
+}
+
+#quick-info-bar {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 15px;
+    width: 370px;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+#sunrise-sunset {
+    background-image: linear-gradient(#8DDBFF, #51C8FF 86%);
+    /* width: 92px; */
+    min-width: 92px;
+    height: 80px;
+    position: relative;
+    top: 0px;
+    border-radius: 10px;
+    
+    flex-grow: 1;
+}
+
+.sun {
+    display: flex;
+    flex-direction: row;
+
+    margin: 10px;
+    margin-bottom: 15px;
+}
+
+.sun-img {
+    width: 20px;
+    height: 20px;
+    position:relative;
+    top: 0px;
+    left: 0px;
+
+    margin-right: 10px;
+}
+
+.sun-time {
+    font-weight: 600;
+    position: relative;
+    top: 0px;
+
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.info-bar {
+    background-image: linear-gradient(#8DDBFF, #51C8FF 86%);
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 0px;
+    border-radius: 10px;
+
+    padding: 10px;
+    margin-right: 0px;
+    
+}
+
+.info-bar-title {
+    font-weight: 600;
+    position: relative;
+    top: 0px;
+    text-align: center;
+    margin: 0px;
+}
+
+.info-bar-data {
+    position: relative;
+    font-size: 32;
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#wind-data{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    margin-bottom: 0px;
+}
+
+#hourly-forecast-box {
+    background-image: linear-gradient(#8DDBFF, #51C8FF 86%);
+    margin: 15px;
+
+    position: relative;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+#daily-forecast-box {
+    background-image: linear-gradient(#8DDBFF, #51C8FF 86%);
+    margin: 15px;
+
+    position: relative;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.header {
+    color: #E4F7FF;
+    font-size: 8px;
+    font-weight: 300px;
+    
+    position: relative;
+    top: 5px;
+    left: 5px;
+
+    margin-bottom: 0px;
+}
+
+#hourly-forecast {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 20px;
+
+    padding: 10px;
+}
+
+#daily-forecast {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 7px;
+
+    padding: 10px;
+}
+
+.forecast-section {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    flex-grow: 1;
+}
+
+.forecast-label {
+    margin: 0px;
+}
+
+.forecast-temp {
+    font-size: 16px;
+    margin: 0px;
+}
+
+.forecast-icon {
+    height: 30px;
+    width: 30px;
+
+    margin: 2px;
+    align-self: center;
+}
+
+.divider {
+    height: 75;
+    min-width: 1px;
+
+    background-color: #AEE5FF; 
+}
+
+#widget-section {
+    width: 100%-30px;
+    margin: 15px;
+    gap: 15px;
+
+    position: relative;
+    margin-top: 20;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.widget {
+    background-image: linear-gradient(#8DDBFF, #51C8FF 86%);
+    flex-grow: 1;
+
+    width: 178px;
+
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.widget-title {
+    color: #E4F7FF;
+    font-size: 16;
+    margin: 0px;
+
+    position: relative;
+}
+
+.widget-data {
+    font-size: 48;
+    font-weight: 200;
+    margin: 0px;
+
+    position: relative;
+    top: 10px;
+}
+
+.widget-subdata {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0px;
+    margin-bottom: 10px;
+
+    position: relative;
+    top: 10px;
+}
+
+#location-scroll-bar {
+    background-color: #51C8FF;
+    position: absolute;
+    top: 810px;
+    left: 0;
+
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+}
+
+#dots-img {
+    width: 100px;
+    height: 35px;
+}
+
+
+

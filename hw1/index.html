@@ -1,0 +1,424 @@
+<html>
+    <head>
+        <link href="./styles.css" rel="stylesheet" />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+        </style>
+    </head>
+    <body>
+        <div id="weather-app">
+            <div id="dynamic-island"></div>
+            <img id="status-bar" src="./assets/Status Bar - iPhone.png">
+            <p id="time">3:19</p>
+
+            <div id="button-bar">
+                <img id="home-button" src="./assets/home-button.png">
+                <button onclick="copyURL()" id="share-button">
+                    <img id="share-icon" src="./assets/share-button.png">
+                </button>
+                <div id="settings-button">
+                    <img id="settings-icon" src="./assets/settings-button.png">
+                </div>
+            </div>
+
+            <div id="scrollable-area">
+
+                <p id="location">Philadelphia</p>
+
+                <div id="day-overview">
+                    <div class="day-section">
+                        <p class="day-time">
+                            Morning
+                        </p>
+                        <p class="day-temp">53&#xb0;</p>
+                    </div>
+
+                    <div class="day-section" style="margin-top: 0px;">
+                        <p class="day-time" style="font-size:20;">
+                            Day
+                        </p>
+                        <p class="day-temp" style="font-size:72;">72&#xb0;</p>
+                    </div>
+
+                    <div class="day-section">
+                        <p class="day-time">
+                            Evening
+                        </p>
+                        <p class="day-temp">65&#xb0;</p>
+                    </div>
+                </div>
+
+                
+                <div id="quick-info-bar">
+                    <div id="sunrise-sunset">
+                        <div class="sun">
+                            <img class="sun-img" src="./assets/sunrise.png">
+                            <p class="sun-time">7:10 AM</p>
+                        </div>
+                        
+                        <div class="sun">
+                            <img class="sun-img" src="./assets/sunset.png">
+                            <p class="sun-time">6:31 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="info-bar">
+                        <p class="info-bar-title">AQI</p>
+                        <p class="info-bar-data">78</p>
+                    </div>
+
+                    <div class="info-bar">
+                        <p class="info-bar-title">Feels like</p>
+                        <p class="info-bar-data">70&#xb0;</p>
+                    </div>
+
+                    <div class="info-bar">
+                        <p class="info-bar-title">Wind</p>
+                        <div id="wind-data">
+                            <p class="info-bar-data">13</p>
+                            <div>
+                                <p style="margin-top:10px;margin-bottom:0px">mph</p>
+                                <p style="margin:0px;">SW</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                
+                <div id="hourly-forecast-box">
+                    <p class="header">HOURLY FORECAST</p>
+                    <div id="hourly-forecast">
+                        <div class="forecast-section">
+                            <p class="forecast-label">4AM</p>
+                            <img class="forecast-icon" src="./assets/moon.png">
+                            <p class="forecast-temp">54&#xb0;</p>
+                        </div>
+                        <div class="forecast-section">
+                            <p class="forecast-label">5AM</p>
+                            <img class="forecast-icon" src="./assets/moon.png">
+                            <p class="forecast-temp">53&#xb0;</p>
+                        </div>
+                        <div class="forecast-section">
+                            <p class="forecast-label">6AM</p>
+                            <img class="forecast-icon" src="./assets/moon.png">
+                            <p class="forecast-temp">53&#xb0;</p>
+                        </div>
+                        <div class="forecast-section">
+                            <p class="forecast-label">7AM</p>
+                            <img class="forecast-icon" src="./assets/moon.png">
+                            <p class="forecast-temp">56&#xb0;</p>
+                        </div>
+                        <div class="forecast-section">
+                            <p class="forecast-label">7:10AM</p>
+                            <img class="forecast-icon" src="./assets/sunrise.png">
+                            <p class="forecast-temp">Sunrise</p>
+                        </div>
+                        <div class="forecast-section">
+                            <p class="forecast-label">8AM</p>
+                            <img class="forecast-icon" src="./assets/sunny.png">
+                            <p class="forecast-temp">59&#xb0;</p>
+                        </div>
+                        <div class="forecast-section">
+                            <p class="forecast-label">9AM</p>
+                            <img class="forecast-icon" src="./assets/sunny.png">
+                            <p class="forecast-temp">62&#xb0;</p>
+                        </div>
+                        <div class="forecast-section">
+                            <p class="forecast-label">10AM</p>
+                            <img class="forecast-icon" src="./assets/sunny.png">
+                            <p class="forecast-temp">64&#xb0;</p>
+                        </div>
+                        <div class="forecast-section">
+                            <p class="forecast-label">11AM</p>
+                            <img class="forecast-icon" src="./assets/sunny.png">
+                            <p class="forecast-temp">67&#xb0;</p>
+                        </div>
+                        <div class="forecast-section">
+                            <p class="forecast-label">12PM</p>
+                            <img class="forecast-icon" src="./assets/sunny.png">
+                            <p class="forecast-temp">71&#xb0;</p>
+                        </div>
+                        <div class="forecast-section">
+                            <p class="forecast-label">1PM</p>
+                            <img class="forecast-icon" src="./assets/sunny.png">
+                            <p class="forecast-temp">73&#xb0;</p>
+                        </div>
+                        <div class="forecast-section">
+                            <p class="forecast-label">2PM</p>
+                            <img class="forecast-icon" src="./assets/sunny.png">
+                            <p class="forecast-temp">75&#xb0;</p>
+                        </div>
+                        <div class="forecast-section">
+                            <p class="forecast-label" style="font-weight:700;">Now</p>
+                            <img class="forecast-icon" src="./assets/sunny.png">
+                            <p class="forecast-temp" style="font-weight:700;">72&#xb0;</p>
+                        </div>
+                        <div class="forecast-section">
+                            <p class="forecast-label">4PM</p>
+                            <img class="forecast-icon" src="./assets/sunny.png">
+                            <p class="forecast-temp">70&#xb0;</p>
+                        </div>
+                        <div class="forecast-section">
+                            <p class="forecast-label">5PM</p>
+                            <img class="forecast-icon" src="./assets/sunny.png">
+                            <p class="forecast-temp">68&#xb0;</p>
+                        </div>
+                        <div class="forecast-section">
+                            <p class="forecast-label">6PM</p>
+                            <img class="forecast-icon" src="./assets/partly-cloudy.png">
+                            <p class="forecast-temp">66&#xb0;</p>
+                        </div>
+                        <div class="forecast-section">
+                            <p class="forecast-label">6:31PM</p>
+                            <img class="forecast-icon" src="./assets/sunset.png">
+                            <p class="forecast-temp">Sunset</p>
+                        </div>
+                        <div class="forecast-section">
+                            <p class="forecast-label">7PM</p>
+                            <img class="forecast-icon" src="./assets/moon.png">
+                            <p class="forecast-temp">66&#xb0;</p>
+                        </div>
+                        <div class="forecast-section">
+                            <p class="forecast-label">8PM</p>
+                            <img class="forecast-icon" src="./assets/moon.png">
+                            <p class="forecast-temp">65&#xb0;</p>
+                        </div>
+                        <div class="forecast-section">
+                            <p class="forecast-label">9PM</p>
+                            <img class="forecast-icon" src="./assets/moon.png">
+                            <p class="forecast-temp">65&#xb0;</p>
+                        </div>
+                        <div class="forecast-section">
+                            <p class="forecast-label">10PM</p>
+                            <img class="forecast-icon" src="./assets/moon.png">
+                            <p class="forecast-temp">63&#xb0;</p>
+                        </div>
+                        <div class="forecast-section">
+                            <p class="forecast-label">11PM</p>
+                            <img class="forecast-icon" src="./assets/moon.png">
+                            <p class="forecast-temp">62&#xb0;</p>
+                        </div>
+                        <div class="forecast-section">
+                            <p class="forecast-label">12AM</p>
+                            <img class="forecast-icon" src="./assets/moon.png">
+                            <p class="forecast-temp">59&#xb0;</p>
+                        </div>
+                        <div class="forecast-section">
+                            <p class="forecast-label">1AM</p>
+                            <img class="forecast-icon" src="./assets/moon.png">
+                            <p class="forecast-temp">57&#xb0;</p>
+                        </div>
+                        <div class="forecast-section">
+                            <p class="forecast-label">2AM</p>
+                            <img class="forecast-icon" src="./assets/moon.png">
+                            <p class="forecast-temp">55&#xb0;</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="daily-forecast-box">
+                    <p class="header">10 DAY FORECAST</p>
+                    <div id="daily-forecast">
+                        <div class="forecast-section">
+                            <p class="forecast-label">Wed</p>
+                            <img class="forecast-icon" src="./assets/cloudy.png">
+                            <p class="forecast-temp">48&#xb0;-71&#xb0;</p>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="forecast-section">
+                            <p class="forecast-label">Thur</p>
+                            <img class="forecast-icon" src="./assets/cloudy.png">
+                            <p class="forecast-temp">46&#xb0;-67&#xb0;</p>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="forecast-section">
+                            <p class="forecast-label">Fri</p>
+                            <img class="forecast-icon" src="./assets/partly-cloudy.png">
+                            <p class="forecast-temp">53&#xb0;-72&#xb0;</p>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="forecast-section">
+                            <p class="forecast-label">Sat</p>
+                            <img class="forecast-icon" src="./assets/sunny.png">
+                            <p class="forecast-temp">57&#xb0;-79&#xb0;</p>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="forecast-section">
+                            <p class="forecast-label">Sun</p>
+                            <img class="forecast-icon" src="./assets/sunny.png">
+                            <p class="forecast-temp">58&#xb0;-81&#xb0;</p>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="forecast-section">
+                            <p class="forecast-label">Mon</p>
+                            <img class="forecast-icon" src="./assets/sunny.png">
+                            <p class="forecast-temp">53&#xb0;-76&#xb0;</p>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="forecast-section">
+                            <p class="forecast-label">Tue</p>
+                            <img class="forecast-icon" src="./assets/partly-cloudy.png">
+                            <p class="forecast-temp">50&#xb0;-72&#xb0;</p>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="forecast-section">
+                            <p class="forecast-label">Wed</p>
+                            <img class="forecast-icon" src="./assets/sunny.png">
+                            <p class="forecast-temp">48&#xb0;-68&#xb0;</p>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="forecast-section">
+                            <p class="forecast-label">Thu</p>
+                            <img class="forecast-icon" src="./assets/sunny.png">
+                            <p class="forecast-temp">52&#xb0;-73&#xb0;</p>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="forecast-section">
+                            <p class="forecast-label" style="font-weight:700;">Today</p>
+                            <img class="forecast-icon" src="./assets/sunny.png">
+                            <p class="forecast-temp" style="font-weight:700;">53&#xb0;-75&#xb0;</p>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="forecast-section">
+                            <p class="forecast-label">Sat</p>
+                            <img class="forecast-icon" src="./assets/partly-cloudy.png">
+                            <p class="forecast-temp">56&#xb0;-78&#xb0;</p>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="forecast-section">
+                            <p class="forecast-label">Sun</p>
+                            <img class="forecast-icon" src="./assets/partly-cloudy.png">
+                            <p class="forecast-temp">50&#xb0;-72&#xb0;</p>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="forecast-section">
+                            <p class="forecast-label">Mon</p>
+                            <img class="forecast-icon" src="./assets/cloudy.png">
+                            <p class="forecast-temp">47&#xb0;-67&#xb0;</p>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="forecast-section">
+                            <p class="forecast-label">Tue</p>
+                            <img class="forecast-icon" src="./assets/cloudy.png">
+                            <p class="forecast-temp">45&#xb0;-68&#xb0;</p>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="forecast-section">
+                            <p class="forecast-label">Wed</p>
+                            <img class="forecast-icon" src="./assets/partly-cloudy.png">
+                            <p class="forecast-temp">52&#xb0;-71&#xb0;</p>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="forecast-section">
+                            <p class="forecast-label">Thu</p>
+                            <img class="forecast-icon" src="./assets/sunny.png">
+                            <p class="forecast-temp">57&#xb0;-79&#xb0;</p>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="forecast-section">
+                            <p class="forecast-label">Fri</p>
+                            <img class="forecast-icon" src="./assets/sunny.png">
+                            <p class="forecast-temp">55&#xb0;-78&#xb0;</p>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="forecast-section">
+                            <p class="forecast-label">Sat</p>
+                            <img class="forecast-icon" src="./assets/sunny.png">
+                            <p class="forecast-temp">54&#xb0;-72&#xb0;</p>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="forecast-section">
+                            <p class="forecast-label">Sun</p>
+                            <img class="forecast-icon" src="./assets/sunny.png">
+                            <p class="forecast-temp">52&#xb0;-75&#xb0;</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="widget-section">
+                    <div class="widget">
+                        <p class="widget-title">UV INDEX</p>
+                        <p class="widget-data">3</p>
+                        <p class="widget-subdata">Low</p>
+                    </div>
+
+                    <div class="widget">
+                        <p class="widget-title">HUMIDITY</p>
+                        <p class="widget-data">37%</p>
+                    </div>
+                </div>
+
+                <div id="widget-section">
+                    <div class="widget">
+                        <p class="widget-title">FEELS LIKE</p>
+                        <p class="widget-data">70&#xb0;</p>
+                        <p class="widget-subdata">Actual: 72&#xb0;</p>
+                    </div>
+
+                    <div class="widget">
+                        <p class="widget-title">PRECIPITATION</p>
+                        <p class="widget-data">0"</p>
+                        <p class="widget-subdata">Today</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="location-scroll-bar">
+                <img id="dots-img" src="./assets/dots.png">
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    const hourly = document.getElementById('hourly-forecast');
+    hourly.scrollLeft = 511;
+
+    const daily = document.getElementById('daily-forecast');
+    daily.scrollLeft = 513;
+
+    function copyURL() {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                alert("URL copied to clipboard!");
+            }).catch(err => {
+                console.error("Failed to copy URL: ", err);
+            });
+        }
+</script>
