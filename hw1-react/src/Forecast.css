@@ -1,0 +1,80 @@
+#hourly-forecast-box {
+    background-image: linear-gradient(#8DDBFF, #51C8FF 86%);
+    margin: 15px;
+  
+    position: relative;
+    margin-top: 30px;
+    border-radius: 10px;
+  }
+
+
+#daily-forecast-box {
+    background-image: linear-gradient(#8DDBFF, #51C8FF 86%);
+    margin: 15px;
+  
+    position: relative;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.header {
+    color: #E4F7FF;
+    font-size: 8px;
+    font-weight: 300px;
+
+    position: relative;
+    top: 5px;
+    left: 5px;
+
+    margin-bottom: 0px;
+}
+
+#hourly-forecast {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 20px;
+
+    padding: 10px;
+}
+
+#daily-forecast {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 7px;
+
+    padding: 10px;
+}
+
+.forecast-section {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    flex-grow: 1;
+}
+
+.forecast-label {
+    margin: 0px;
+}
+
+.forecast-temp {
+    font-size: 16px;
+    margin: 0px;
+}
+
+.forecast-icon {
+    height: 30px;
+    width: 30px;
+
+    margin: 2px;
+    align-self: center;
+}
+
+.divider {
+    height: 75;
+    min-width: 1px;
+  
+    background-color: #AEE5FF; 
+}

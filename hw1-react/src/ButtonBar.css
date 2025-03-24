@@ -1,0 +1,57 @@
+#button-bar {
+    display: flex;
+    flex-direction: row;
+
+    height: 30px;
+    width: auto;
+}
+
+#home-button {
+    height: 30px;
+    width: 30px;
+
+    margin: 0px;
+
+    position: absolute;
+    left: 15px;
+}
+
+#share-button {
+    height: 30px;
+    width: 30px;
+
+    margin: 0px;
+    border-radius: 15px;
+    border-width: 0px;
+    padding: 0;
+    
+    position: absolute;
+    right: 50px;
+    
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+#share-icon {
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+}
+
+#settings-button {
+    height: 30px;
+    width: 30px;
+
+    margin: 0px;
+    border-radius: 15px;
+
+    position: absolute;
+    right: 15px;
+    
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+#settings-icon {
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+}

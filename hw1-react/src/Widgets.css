@@ -1,0 +1,48 @@
+.widget-section {
+    width: 100%-30px;
+    margin: 15px;
+    gap: 15px;
+  
+    position: relative;
+    margin-top: 20;
+    
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .widget {
+    background-image: linear-gradient(#8DDBFF, #51C8FF 86%);
+    flex-grow: 1;
+  
+    width: 178px;
+  
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .widget-title {
+    color: #E4F7FF;
+    font-size: 12pt;
+    margin: 0px;
+  
+    position: relative;
+  }
+  
+  .widget-data {
+    font-size: 36pt;
+    font-weight: 200;
+    margin: 0px;
+  
+    position: relative;
+    top: 10px;
+  }
+  
+  .widget-subdata {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0px;
+    margin-bottom: 10px;
+  
+    position: relative;
+    top: 10px;
+  }

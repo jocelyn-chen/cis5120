@@ -1,0 +1,32 @@
+cloudy.png
+icon found on Flaticon, created by apien 
+
+dots.png
+icon found on Flaticon, created by Amazona Adorada
+
+home-button.png
+icon found on Flaticon, created by Freepik
+
+moon.png
+icon found on Flaticon, created by apien 
+
+partly-cloudy.png
+icon found on Flaticon, created by apien 
+
+settings-button.png
+icon found on Flaticon, created by Freepik
+
+share-button.png 
+icon found on Flaticon, created by See Icons - Flaticon</a>
+
+Status Bar - iPhone.png 
+icon from Figma, Status Bar - iPhone
+
+sunny.png 
+icon found on Flaticon, created by apien 
+
+sunrise.png 
+icon found on Flaticon, created by apien 
+
+sunset.png 
+icon found on Flaticon, created by apien 

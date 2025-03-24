@@ -1,0 +1,85 @@
+#quick-info-bar {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 15px;
+    width: 370px;
+    margin-top: 40px;
+    gap: 10px;
+  }
+  
+  #sunrise-sunset {
+    background-image: linear-gradient(#8DDBFF, #51C8FF 86%);
+    /* width: 92px; */
+    min-width: 92px;
+    height: 80px;
+    position: relative;
+    top: 0px;
+    border-radius: 10px;
+    
+    flex-grow: 1;
+  }
+  
+  .sun {
+    display: flex;
+    flex-direction: row;
+  
+    margin: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .sun-img {
+    width: 20px;
+    height: 20px;
+    position:relative;
+    top: 0px;
+    left: 0px;
+  
+    margin-right: 10px;
+  }
+  
+  .sun-time {
+    font-weight: 600;
+    position: relative;
+    top: 0px;
+  
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  
+  .info-bar {
+    background-image: linear-gradient(#8DDBFF, #51C8FF 86%);
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 0px;
+    border-radius: 10px;
+  
+    padding: 10px;
+    margin-right: 0px;
+    
+  }
+  
+  .info-bar-title {
+    font-weight: 600;
+    position: relative;
+    top: 0px;
+    text-align: center;
+    margin: 0px;
+  }
+  
+  .info-bar-data {
+    position: relative;
+    font-size: 24pt;
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  
+  #wind-data{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    margin-bottom: 0px;
+  }
+  

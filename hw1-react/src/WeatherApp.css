@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@150;300;400;600&display=swap');
+
+#weather-app {
+  position: absolute;
+  background-image: linear-gradient(#4EC7FF, #BBEAFF 40%, #A4E2FF 100%);
+  height: 870px;
+  width: 400px;
+  border-radius: 50px;
+  left: 0px;
+  top: 0px;
+
+  overflow: hidden;
+
+  font-family: Inter;
+  font-size: 9pt;
+  font-weight: 300;
+  color: #ffffff;
+}

@@ -1,0 +1,47 @@
+<html>
+    <body>
+        <div id="todo"></div>
+
+        <!-- Import the core React library -->
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <!-- Import the React DOM, methods that allow you to use React with DOM --> 
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <!-- Import Babel, which will "compile" your React into JavaScript --> 
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+        <script type="text/babel" src="todo.js"></script>
+        <!-- <script type="text/jsx">
+            const todo = document.getElementById('todo');
+            function ListItem({taskName}) {
+                console.log(taskName);
+                return <p>{taskName}</p>;
+            }           
+            function Board() {
+                return (
+                    <div>
+                        <ListItem taskName="Touch grass" />
+                    </div>
+                );
+            }
+
+            const root = ReactDOM.createRoot(todo);
+            root.render(<Board />);
+        </script> -->
+     
+        <!-- <script type="text/javascript">
+            // // Select the div element with 'todo' id
+            // const todo = document.getElementById('todo');
+            // // Create a new p (paragraph) element
+            // const item = document.createElement('p');
+            // // Create a new text node for the p element with the text "Touch grass"
+            // const text = "Touch grass";
+            // const itemContent = document.createTextNode(text);
+            // // Append the text to the p element (becomes "<p>Touch grass</p>")
+            // item.appendChild(itemContent);
+            // // Place the p element inside the div. This makes the text show up, because
+            // // now it is actually "attached" into the web page.
+            // todo.appendChild(item);
+
+        </script> -->
+    </body>
+</html>

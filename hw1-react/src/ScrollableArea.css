@@ -1,0 +1,25 @@
+#scrollable-area {
+    position: absolute;
+    height: 725px;
+    width: 400px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    top: 85px;
+  
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+  
+}
+
+#location {
+    font-size: 23px;
+
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    text-shadow: 0px 0px 4px gray;
+}
